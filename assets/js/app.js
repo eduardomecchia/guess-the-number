@@ -1,6 +1,7 @@
 // Pick a random number between 0 and 9 (0 and 9 included)
 const feedbackEl = document.querySelector('.feedback');
 const userNumberEl = document.querySelector('.user-number');
+const overlayEl = document.querySelector('.overlay');
 let randomNumber;
 let userNumber;
 
@@ -35,7 +36,11 @@ allButtons.forEach(button => {
         if (chooseNumber(button) == randomNumber) {
             feedbackEl.innerHTML = 'Esatto!';
 
+            // Disable game until it restarts
+            overlayEl.style.display = 'block';
+
             setTimeout(function() {
+                overlayEl.style.display = 'none';
                 resetFeedback();
             }, 3000);
         } else if (chooseNumber(button) < randomNumber) {
