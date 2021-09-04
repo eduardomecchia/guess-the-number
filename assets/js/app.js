@@ -1,6 +1,8 @@
 // Pick a random number between 0 and 9 (0 and 9 included)
 const feedbackEl = document.querySelector('.feedback');
+const userNumberEl = document.querySelector('.user-number');
 let randomNumber;
+let userNumber;
 
 function resetFeedback() {
     randomNumber = Math.floor(Math.random() * 10);
@@ -18,6 +20,10 @@ for (let i = 0; i < 10; i++) {
 
 // Add functionality to buttons on click
 function chooseNumber(element) {
+    userNumber = element.innerHTML;
+    userNumberEl.innerHTML = 'Numero scelto:';
+    userNumberEl.innerHTML += ' ' + userNumber;
+
     return element.innerHTML;
 }
 
