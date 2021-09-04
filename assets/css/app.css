@@ -34,6 +34,7 @@ body {
     justify-content: right;
     align-items: center;
     background-color: black;
+    -webkit-app-region: drag;
 }
 
 .minimize,
@@ -42,10 +43,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     transition: 0.25s;
     background-color: black;
+    padding: 0 10px;
+    border: 0;
 }
 
 .minimize:hover,
