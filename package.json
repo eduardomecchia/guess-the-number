@@ -1,0 +1,14 @@
+{
+  "name": "guess-the-number",
+  "version": "1.0.0",
+  "description": "Test application for IndieGala",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Eduardo Mecchia",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^14.0.0"
+  }
+}
