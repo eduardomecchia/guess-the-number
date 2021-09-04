@@ -29,6 +29,31 @@ body {
     display: none;
 }
 
+.topbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: black;
+}
+
+.minimize,
+.maximize,
+.quit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    transition: 0.25s;
+    background-color: black;
+}
+
+.minimize:hover,
+.maximize:hover,
+.quit:hover {
+    background-color: grey;
+}
+
 .heading {
     padding: 40px 0;
     color: red;
