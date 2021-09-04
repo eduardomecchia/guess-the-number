@@ -31,3 +31,22 @@ body {
     opacity: 0.5;
     display: none;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-button {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 7px;
+    border: 0;
+    background-color: pink;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.user-button:hover {
+    background-color: palevioletred;
+}
