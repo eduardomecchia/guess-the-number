@@ -60,6 +60,7 @@ activateButtons();
 const hardModeEl = document.querySelector('.hard-mode');
 const normalModeEl = document.querySelector('.normal-mode');
 
+// From normal to hard
 hardModeEl.addEventListener('click', function () {
     buttonsEl.innerHTML = '';
     userNumberEl.innerHTML = 'Numero scelto:';
@@ -75,6 +76,7 @@ hardModeEl.addEventListener('click', function () {
     activateButtons();
 });
 
+// From hard to normal
 normalModeEl.addEventListener('click', function () {
     buttonsEl.innerHTML = '';
     userNumberEl.innerHTML = 'Numero scelto:';
