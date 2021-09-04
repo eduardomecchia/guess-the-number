@@ -35,6 +35,7 @@ body {
     align-items: center;
     background-color: black;
     -webkit-app-region: drag;
+    -webkit-user-select: none;
 }
 
 .minimize,
