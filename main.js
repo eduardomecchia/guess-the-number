@@ -1,13 +1,22 @@
 const { app, BrowserWindow } = require('electron');
 
-// Load index.html
 function createWindow() {
     const window = new BrowserWindow({
       width: 800,
       height: 600
     });
-  
+
+    // Load index.html
     window.loadFile('index.html');
+
+    // Pick a random number between 0 and 9 (0 and 9 included)
+    window.webContents.on('did-finish-load', () => {
+        let code = `const feedbackEl = document.querySelector('.feedback');
+        let randomNumber = Math.floor(Math.random() * 10);
+        feedbackEl.innerHTML = 'Quale numero sto pensando?';`;
+
+        window.webContents.executeJavaScript(code);
+    });
 }
 
 // Wait until app's ready event before creating window
