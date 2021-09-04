@@ -38,9 +38,9 @@ body {
     -webkit-user-select: none;
 }
 
-.minimize,
-.maximize,
-.quit {
+#minimize,
+#maximize,
+#quit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,9 +53,9 @@ body {
     -webkit-app-region: no-drag;
 }
 
-.minimize:hover,
-.maximize:hover,
-.quit:hover {
+#minimize:hover,
+#maximize:hover,
+#quit:hover {
     background-color: grey;
 }
 
