@@ -41,6 +41,7 @@ allButtons.forEach(button => {
 
             setTimeout(function() {
                 overlayEl.style.display = 'none';
+                userNumberEl.innerHTML = 'Numero scelto:';
                 resetFeedback();
             }, 3000);
         } else if (chooseNumber(button) < randomNumber) {
