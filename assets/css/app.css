@@ -9,7 +9,6 @@
 body {
     background-color: yellow;
     position: relative;
-    overflow: hidden;
 }
 
 .container {
@@ -57,12 +56,15 @@ body {
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .user-button {
     display: inline-block;
     padding: 10px 20px;
+    margin-right: 20px;
     border-radius: 7px;
     border: 0;
     background-color: pink;
@@ -73,4 +75,38 @@ body {
 
 .user-button:hover {
     background-color: palevioletred;
+}
+
+.hard-mode {
+    display: block;
+    margin-left: auto;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 0;
+    background-color: red;
+    margin-top: 40px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.hard-mode:hover {
+    background-color: brown;
+}
+
+.normal-mode {
+    display: none;
+    margin-left: auto;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 0;
+    background-color: green;
+    margin-top: 40px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.normal-mode:hover {
+    background-color: darkgreen;
 }
