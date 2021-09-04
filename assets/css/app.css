@@ -9,6 +9,7 @@
 body {
     background-color: yellow;
     position: relative;
+    overflow: hidden;
 }
 
 .container {
@@ -32,6 +33,28 @@ body {
     display: none;
 }
 
+.heading {
+    padding: 40px 0;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+.feedback {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.user-number {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -39,11 +62,12 @@ body {
 
 .user-button {
     display: inline-block;
-    padding: 7px 20px;
+    padding: 10px 20px;
     border-radius: 7px;
     border: 0;
     background-color: pink;
-    transition: 0.2s;
+    font-size: 50px;
+    transition: 0.25s;
     cursor: pointer;
 }
 
