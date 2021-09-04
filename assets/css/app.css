@@ -54,14 +54,19 @@ body {
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .user-button {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
+    height: 64px;
+    width: 64px;
     border-radius: 7px;
     border: 0;
     background-color: pink;
