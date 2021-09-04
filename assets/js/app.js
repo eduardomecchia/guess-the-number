@@ -1,7 +1,13 @@
 // Pick a random number between 0 and 9 (0 and 9 included)
 const feedbackEl = document.querySelector('.feedback');
-let randomNumber = Math.floor(Math.random() * 10);
-feedbackEl.innerHTML = 'Quale numero sto pensando?';
+let randomNumber;
+
+function resetFeedback() {
+    randomNumber = Math.floor(Math.random() * 10);
+    feedbackEl.innerHTML = 'Quale numero sto pensando?';
+}
+
+resetFeedback();
 
 // Create user buttons
 const buttonsEl = document.querySelector('.buttons');
@@ -22,6 +28,10 @@ allButtons.forEach(button => {
     button.addEventListener('click', function () {
         if (chooseNumber(button) == randomNumber) {
             feedbackEl.innerHTML = 'Esatto!';
+
+            setTimeout(function() {
+                resetFeedback();
+            }, 3000);
         } else if (chooseNumber(button) < randomNumber) {
             feedbackEl.innerHTML = 'Più alto!';
         } else if (chooseNumber(button) > randomNumber) {
