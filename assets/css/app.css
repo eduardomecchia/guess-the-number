@@ -40,7 +40,7 @@ body {
 
 #minimize,
 #maximize,
-#quit {
+#close {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ body {
 
 #minimize:hover,
 #maximize:hover,
-#quit:hover {
+#close:hover {
     background-color: grey;
 }
 
