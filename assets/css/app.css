@@ -38,9 +38,7 @@ body {
     user-select: none;
 }
 
-#minimize,
-#maximize,
-#close {
+.window-control {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,9 +51,7 @@ body {
     -webkit-app-region: no-drag;
 }
 
-#minimize:hover,
-#maximize:hover,
-#close:hover {
+.window-control:hover {
     background-color: grey;
 }
 
