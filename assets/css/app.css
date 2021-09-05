@@ -191,7 +191,7 @@ body {
     border-radius: 7px;
     border: 0;
     margin-top: 40px;
-    transition: transform 0.25s;
+    transition: transform 0.25s, background-color 0.25s;
     cursor: pointer;
 }
 .difficulty-button:hover {
