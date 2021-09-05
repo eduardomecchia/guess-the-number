@@ -1,7 +1,7 @@
 const { BrowserWindow } = require('@electron/remote');
 const window = BrowserWindow.getFocusedWindow();
 
-// Grant functionality to custom window controls
+// Add functionality to custom window controls
 window.once('ready-to-show', () => {
     const minimize = document.querySelector('#minimize');
     const maximize = document.querySelector('#maximize');

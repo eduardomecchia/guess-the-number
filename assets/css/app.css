@@ -52,7 +52,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .help {
@@ -68,7 +68,7 @@ body {
 
 .mode-button {
     background-color: #74f487;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: black;
     padding: 10px 20px;
@@ -89,13 +89,6 @@ body {
 }
 
 /* Game content rules */
-.mode-info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: green;
-}
-
 .overlay {
     position: absolute;
     top: 50%;

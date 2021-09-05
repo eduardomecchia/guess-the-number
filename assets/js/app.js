@@ -4,6 +4,23 @@ const overlayEl = document.querySelector('.overlay');
 let randomNumber;
 let userNumber;
 
+// Add functionality to title screen buttons
+const classicButton = document.querySelector('#classic');
+const reversedButton = document.querySelector('#reversed');
+const classicGame = document.querySelector('.container.classic');
+const reversedGame = document.querySelector('.container.reversed');
+const titleScreen = document.querySelector('.title-screen');
+
+function showGameMode(button, element) {
+    button.addEventListener('click', function () {
+        titleScreen.style.display = 'none';
+        element.style.display = 'block';
+    });
+}
+
+showGameMode(classicButton, classicGame);
+showGameMode(reversedButton, reversedGame);
+
 // Pick a random number between 0 and 9 (0 and 9 included)
 function resetFeedback() {
     randomNumber = Math.floor(Math.random() * 10);
