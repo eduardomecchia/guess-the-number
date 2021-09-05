@@ -110,7 +110,6 @@ body {
 }
 
 .user-button:hover {
-    transform: scale(1.1);
     background-color: #330033c2;
 }
 
