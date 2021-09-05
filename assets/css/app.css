@@ -89,6 +89,15 @@ body {
 }
 
 /* Game content rules */
+.back {
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    cursor: pointer;
+}
+
 .overlay {
     position: absolute;
     top: 50%;

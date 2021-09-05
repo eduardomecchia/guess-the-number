@@ -21,6 +21,17 @@ function showGameMode(button, element) {
 showGameMode(classicButton, classicGame);
 showGameMode(reversedButton, reversedGame);
 
+// Add functionality to 'back' buttons
+const backButtons = document.querySelectorAll('.back');
+
+backButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        classicGame.style.display = 'none';
+        reversedGame.style.display = 'none';
+        titleScreen.style.display = 'block';
+    });
+});
+
 // Pick a random number between 0 and 9 (0 and 9 included)
 function resetFeedback() {
     randomNumber = Math.floor(Math.random() * 10);
