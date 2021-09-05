@@ -1,3 +1,11 @@
+// Handle setup events as quickly as possible
+const setupEvents = require('./installers/setupEvents');
+
+if (setupEvents.handleSquirrelEvent()) {
+   // Squirrel event handled and app will exit in 1000ms, so don't do anything else
+   return;
+}
+
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 require('@electron/remote/main').initialize();
