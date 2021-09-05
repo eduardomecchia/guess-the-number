@@ -3,7 +3,6 @@ const {
   BrowserWindow
 } = require('electron');
 const path = require('path');
-const url = require('url');
 
 require('@electron/remote/main').initialize();
 
