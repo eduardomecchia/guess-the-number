@@ -58,6 +58,7 @@ body {
 .help {
     width: 50%;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .mode-buttons {
@@ -76,10 +77,16 @@ body {
     border: 0;
     transition: transform 0.25s;
     cursor: pointer;
-    margin: 0 20px;
 }
 .mode-button:hover {
     transform: scale(1.1);
+}
+
+#classic {
+    margin-right: 15px;
+}
+#reversed {
+    margin-left: 15px;
 }
 
 /* Mode management rules */
