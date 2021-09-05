@@ -20,6 +20,6 @@ function getInstallerConfig () {
     outputDirectory: path.join(outPath, 'windows-installer'),
     exe: 'guess-the-number.exe',
     setupExe: 'GuessTheNumberInstaller.exe',
-    setupIcon: path.join(rootPath, 'assets', 'images', 'tux.ico')
+    setupIcon: path.join(rootPath, 'assets', 'images', 'dice.ico')
   })
 }
