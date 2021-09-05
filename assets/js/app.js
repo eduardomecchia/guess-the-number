@@ -50,8 +50,7 @@ for (let i = 0; i < 10; i++) {
 // Add functionality to buttons on click
 function chooseNumber(element) {
     userNumber = element.innerHTML;
-    userNumberEl.innerHTML = 'Numero scelto:';
-    userNumberEl.innerHTML += ' ' + userNumber;
+    userNumberEl.innerHTML = 'Numero scelto: ' + userNumber;
 
     return element.innerHTML;
 }
