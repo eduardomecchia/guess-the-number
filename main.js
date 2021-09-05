@@ -23,7 +23,7 @@ function createWindow() {
     }
   });
 
-  // Set the application's taskbar icon+
+  // Set the application's taskbar icon
   window.setIcon(path.join(__dirname, 'assets/images/dice.ico'));
 
   // Load index.html
