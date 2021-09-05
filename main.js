@@ -3,6 +3,8 @@ const {
   BrowserWindow
 } = require('electron');
 const path = require('path');
+const url = require('url');
+
 require('@electron/remote/main').initialize();
 
 if (handleSquirrelEvent(app)) {
@@ -21,8 +23,8 @@ function createWindow() {
     }
   });
 
-  // Set the application's taskbar icon
-  window.setIcon('./assets/images/dice.ico');
+  // Set the application's taskbar icon+
+  window.setIcon(path.join(__dirname, 'assets/images/dice.ico'));
 
   // Load index.html
   window.loadFile('index.html');
