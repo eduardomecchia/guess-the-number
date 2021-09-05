@@ -1,8 +1,11 @@
 /* Global rules */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Azeret Mono', monospace;
 }
 
 body {
