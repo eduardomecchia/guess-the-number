@@ -69,12 +69,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 60px;
 }
 
 .heading-container > a {
     margin-right: 40px;
+    transition: transform 0.25s;
+}
+
+.heading-container > a:hover {
+    transform: scale(1.1);
 }
 
 .heading {
