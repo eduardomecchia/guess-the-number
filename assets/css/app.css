@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: black;
+    background-color: white;
     -webkit-app-region: drag;
     -webkit-user-select: none;
     user-select: none;
@@ -42,17 +42,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    color: white;
     transition: 0.25s;
-    background-color: black;
-    padding: 0 10px;
-    border: 0;
     -webkit-app-region: no-drag;
 }
 
 .window-control:hover {
-    background-color: grey;
+    background-color: lightgrey;
+}
+
+.window-control img {
+    width: 32px;
+    height: 32px;
 }
 
 #game-content {
