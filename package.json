@@ -9,7 +9,8 @@
   "author": "Eduardo Mecchia",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^14.0.0"
+    "electron": "^14.0.0",
+    "electron-winstaller": "^5.0.0"
   },
   "dependencies": {
     "@electron/remote": "^1.2.1"
