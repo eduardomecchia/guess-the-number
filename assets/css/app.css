@@ -82,6 +82,12 @@ body {
     transform: scale(1.1);
 }
 
+/* Mode management rules */
+.container.classic,
+.container.reversed {
+    display: none;
+}
+
 /* Game content rules */
 .mode-info {
     position: absolute;
