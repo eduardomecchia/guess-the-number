@@ -26,18 +26,30 @@
 
         <!-- Game content -->
         <main id="game-content">
-            <!-- Overlay that blocks the game when it ends -->
-            <div class="overlay"></div>
-
-            <div class="container">
+            <!-- Title screen -->
+            <div class="title-screen">
                 <div class="heading-container">
                     <a href="index.html">
                         <img src="./assets/images/dice.ico" alt="Green dice">
                     </a>
-
+    
                     <h1 class="heading">Guess The Number!</h1>
                 </div>
-        
+
+                <div class="mode-toggle">
+                    <div class="help">Scegli una modalità! Nella modalità classica devi indovinare il numero del computer, mentre in quella invertita è lui che deve indovinare il tuo.</div>
+
+                    <div class="mode-buttons">
+                        <button class="mode-button" id="classic">Modalità classica</button>
+                        <button class="mode-button" id="reversed">Modalità invertita</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay that blocks the game when it ends -->
+            <div class="overlay"></div>
+
+            <div class="container classic">
                 <div class="feedback">
                     <!-- Computer feedback goes here -->
                 </div>

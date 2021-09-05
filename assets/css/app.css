@@ -46,6 +46,42 @@ body {
     height: 32px;
 }
 
+/* Title screen rules */
+.mode-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.help {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.mode-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-button {
+    background-color: #74f487;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 0;
+    transition: transform 0.25s;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.mode-button:hover {
+    transform: scale(1.1);
+}
+
 /* Game content rules */
 .overlay {
     position: absolute;
