@@ -1,10 +1,10 @@
-// Pick a random number between 0 and 9 (0 and 9 included)
 const feedbackEl = document.querySelector('.feedback');
 const userNumberEl = document.querySelector('.user-number');
 const overlayEl = document.querySelector('.overlay');
 let randomNumber;
 let userNumber;
 
+// Pick a random number between 0 and 9 (0 and 9 included)
 function resetFeedback() {
     randomNumber = Math.floor(Math.random() * 10);
     feedbackEl.innerHTML = 'Quale numero sto pensando?';
