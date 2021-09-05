@@ -114,36 +114,33 @@ body {
     background-color: #330033c2;
 }
 
-.hard-mode {
-    display: block;
+/* Difficulty setting rules */
+.difficulty-button {
     margin-left: auto;
     color: white;
     padding: 10px 20px;
     border-radius: 7px;
     border: 0;
-    background-color: red;
     margin-top: 40px;
     transition: 0.25s;
     cursor: pointer;
 }
+.difficulty-button:hover {
+    transform: scale(1.1);
+}
 
-.hard-mode:hover {
+#hard {
+    display: block;
+    background-color: red;
+}
+#hard:hover {
     background-color: brown;
 }
 
-.normal-mode {
+#normal {
     display: none;
-    margin-left: auto;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 0;
     background-color: green;
-    margin-top: 40px;
-    transition: 0.25s;
-    cursor: pointer;
 }
-
-.normal-mode:hover {
+#normal:hover {
     background-color: darkgreen;
 }

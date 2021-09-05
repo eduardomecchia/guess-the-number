@@ -57,8 +57,8 @@ const activateButtons = () => {
 activateButtons();
 
 // Difficulty setting management
-const hardModeEl = document.querySelector('.hard-mode');
-const normalModeEl = document.querySelector('.normal-mode');
+const hardModeEl = document.querySelector('#hard');
+const normalModeEl = document.querySelector('#normal');
 
 // From normal to hard
 hardModeEl.addEventListener('click', function () {
