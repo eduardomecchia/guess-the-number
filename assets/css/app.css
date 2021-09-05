@@ -93,7 +93,7 @@ body {
     color: green;
     font-weight: bold;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 10px;
     cursor: pointer;
 }
@@ -142,7 +142,7 @@ body {
 .feedback {
     text-align: center;
     font-weight: bold;
-    margin: 20px 0;
+    padding: 20px 0;
     font-size: 30px;
 }
 
