@@ -10,9 +10,9 @@ window.once('ready-to-show', () => {
     minimize.addEventListener('click', function () {
         window.minimize();
     });
-
+    
     maximize.addEventListener('click', function () {
-        window.maximize();
+        window.isMaximized() ? window.unmaximize() : window.maximize();
     });
 
     close.addEventListener('click', function () {
