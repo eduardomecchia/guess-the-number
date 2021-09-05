@@ -33,6 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px 10px;
     transition: 0.25s;
     -webkit-app-region: no-drag;
 }
