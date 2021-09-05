@@ -1,5 +1,4 @@
 /* Global rules */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background-color: yellow;
+    background-color: lavender;
 }
 
 .container {
@@ -16,23 +15,12 @@ body {
     padding-bottom: 50px;
 }
 
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 100%;
-    background-color: #ffffffd7;
-    opacity: 0.5;
-    display: none;
-}
-
+/* Topbar rules */
 #topbar {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: white;
+    background-color: lightgrey;
     -webkit-app-region: drag;
     -webkit-user-select: none;
     user-select: none;
@@ -47,12 +35,25 @@ body {
 }
 
 .window-control:hover {
-    background-color: lightgrey;
+    background-color: darkgrey;
 }
 
 .window-control img {
     width: 32px;
     height: 32px;
+}
+
+/* Game content rules */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1fd;
+    opacity: 0.75;
+    display: none;
 }
 
 #game-content {
@@ -62,14 +63,12 @@ body {
 
 .heading {
     padding: 40px 0;
-    color: red;
     font-size: 40px;
     text-align: center;
 }
 
 .feedback {
     text-align: center;
-    color: red;
     font-weight: bold;
     margin: 20px 0;
     font-size: 30px;
@@ -77,7 +76,6 @@ body {
 
 .user-number {
     text-align: center;
-    color: red;
     font-size: 25px;
     margin-bottom: 30px;
 }
@@ -101,14 +99,16 @@ body {
     width: 64px;
     border-radius: 7px;
     border: 0;
-    background-color: pink;
+    color: white;
+    background-color: #750075c2;
     font-size: 25px;
     transition: 0.25s;
     cursor: pointer;
 }
 
 .user-button:hover {
-    background-color: palevioletred;
+    transform: scale(1.1);
+    background-color: #330033c2;
 }
 
 .hard-mode {
