@@ -119,4 +119,3 @@ normalModeEl.addEventListener('click', function () {
 
     activateButtons();
 });
-
