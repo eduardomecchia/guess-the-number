@@ -65,6 +65,18 @@ body {
     padding-bottom: 50px;
 }
 
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.heading-container > a {
+    margin-right: 40px;
+}
+
 .heading {
     padding: 40px 0;
     font-size: 40px;
@@ -81,6 +93,7 @@ body {
 .user-number {
     text-align: center;
     font-size: 25px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 

@@ -15,7 +15,7 @@ function createWindow() {
 
     // Set the application's taskbar icon
     window.setIcon('./assets/images/dice.ico');
-    
+
     // Load index.html
     window.loadFile('index.html');
 }
